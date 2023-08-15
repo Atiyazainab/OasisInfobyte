@@ -1,0 +1,121 @@
+*{
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+body{
+    background: #150a25;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1{
+    font-size: 6vw;
+    margin-top: 0.2vh;
+    background-image: url(b4.jpeg);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    align-items: center;
+    height: 48vh;
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    padding: 5px;
+    width: 250px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    z-index: 1;
+    transition: box-shadow 0.3s;
+    
+}
+.container:hover img {
+    box-shadow: 0 0 16px 10px rgba(186, 0, 0, 0.5);
+
+}
+.text-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 16px;
+    margin-right: 300px;
+    margin-left: 0px;
+    height: 300px;
+    width: 75%;
+    position: relative;
+    flex-shrink: 0;
+    background: transparent;
+    color: #ddd;
+    font-size: 2.5vw;
+    margin-top: 0.2vh;
+    background-image: url(b3.jpeg);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.biography{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: #ededf4;
+    font-size: 1.5vw;
+    margin-top: 0.2vh;
+    width: 100%;
+    border-radius: 7px;
+    padding-left: 200px;
+    padding-right: 200px;
+    box-sizing: border-box;
+}
+.inner-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: #9e30b7;
+    color: #eaeaf3;
+    font-size: 1.5vw;
+    margin-top: 0.2vh;
+    border-radius: 7px;
+    width: 80%;
+    height: 100%;
+    background-image: url(b7.jpeg);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.biography p{
+    text-align: justify;
+    text-align-last: justify;
+    margin-left: 200px;
+    margin-right: 200px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    word-spacing:.4rem;
+    letter-spacing:.1em;
+    column-count: 2;
+    column-gap: 40px;
+}
