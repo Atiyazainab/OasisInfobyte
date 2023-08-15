@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Login and Registration</title>
+</head>
+<body>
+  <div class="container">
+    <div class="flex-container"></div>
+    <button id="registrationButton" onclick="startRegistrationPage()">Register</button>
+    <button id="loginButton" onclick="startLoginPage()">Login</button>
+    
+    <div id="registrationPage">
+      <h2>Registration</h2>
+      <form>
+        <label for="registrationUsernameInput">Username:</label>
+        <input type="text" id="registrationUsernameInput" required>
+        <br/>
+        <br/>
+
+        <label for="registrationPasswordInput">Password:</label>
+        <input type="password" id="registrationPasswordInput" required>
+        <br/>
+        <br/>
+        
+        <input type="checkbox" id="showPasswordButtonForReg" onclick="showPasswordForRegistration()">
+        <label for="showPasswordButtonForReg">Show Password</label>
+        <button type="button" id="registerUserButton" onclick="registerUser()">Register</button>
+      </form>
+    </div>
+    
+    <div id="loginPage">
+        <h2>Login</h2>
+        <form>
+          <label for="loginUsernameInput">Username:</label>
+          <input type="text" id="loginUsernameInput" required>
+          <br/>
+          <br/>
+
+          <label for="loginPasswordInput">Password:</label>
+          <input type="password" id="loginPasswordInput" required>
+          <br/>
+          <br/>
+          
+          <input type="checkbox" id="showPasswordButtonForLogin" onclick="showPasswordForLogin()">Show Password
+          <!-- <label for="showPasswordButtonForLogin">Show Password</label> -->
+          <br/>
+          <br/>
+          <button type="button" id="loginUserButton" onclick="loginUser()">Login</button>
+        </form>
+    </div>
+    </div>
+    <div class="logpage" id="loggedInPage">
+        <br/>
+        <br/>
+        <br/>
+      <h2>Welcome!</h2>
+      <p id="usernameInLoggedInPage">Username:</p>
+      <button type="button" id="logoutUserButton" onclick="logoutUser()">Logout</button>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
